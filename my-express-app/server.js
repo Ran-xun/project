@@ -27,7 +27,7 @@ app.get('/api/categories', async (req, res) => {
 // 添加分类
 app.post('/api/categories', validateCategory,async (req, res) => {
   try {
-    
+    const newCategory=req.body
     // 补充创建时间（如果前端没传，后端自动生成，避免数据缺失）
     newCategory.createTime = new Date().toISOString().split('T')[0];
     // 读取现有数据

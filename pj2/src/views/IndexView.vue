@@ -5,16 +5,16 @@
         <el-menu :default-openeds="['1']"  @select="handleselect">
           <el-sub-menu index="1">
             <template #title>
-              <el-icon><message /></el-icon>邮箱
+              <el-icon><Menu /></el-icon>主页
             </template>
             <el-menu-item-group>
                 <template #title>Group 1</template>
               <el-menu-item index="user" ><el-icon><User /></el-icon>信息管理</el-menu-item>
-              <el-menu-item index="headpic"><el-icon><Star /></el-icon>收藏邮件</el-menu-item>
+              <el-menu-item index="headpic"><el-icon><List /></el-icon>员工绩效</el-menu-item>
             </el-menu-item-group>
             <el-menu-item-group >
                 <template #title>Group 2</template>
-              <el-menu-item  index="pwd"><el-icon><Clock /></el-icon>历史邮件</el-menu-item>
+              <el-menu-item  index="pwd"><el-icon><Clock /></el-icon>任务管理</el-menu-item>
             </el-menu-item-group>
             <el-sub-menu index="1-4">
               <template #title><el-icon><Link /></el-icon>广告邮件</template>
@@ -67,7 +67,7 @@
             <el-avatar :size="30"  src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png" />
             <template #dropdown>
               <el-dropdown-menu >
-                <el-dropdown-item command="user">个人信息</el-dropdown-item>
+                <el-dropdown-item command="user">信息管理</el-dropdown-item>
                 <el-dropdown-item command="headpic">基本账户</el-dropdown-item>
                 <el-dropdown-item command="pwd">切换账号</el-dropdown-item>
               </el-dropdown-menu>
@@ -89,7 +89,7 @@
 
 <script lang="ts" setup>
 import { onMounted, ref, watch } from 'vue'
-import { User,Menu as IconMenu, Message, Setting, CircleCheck } from '@element-plus/icons-vue'
+import { User,Menu as IconMenu, Message, Setting, CircleCheck, List, Menu } from '@element-plus/icons-vue'
 import router from '@/router'
 const Handlecmd=(key:string)=>{
   router.push(`/index/${key}`)

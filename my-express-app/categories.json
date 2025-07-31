@@ -2,9 +2,9 @@
   {
     "id": 2,
     "name": "技术文档",
-    "description": "API 接口文档、开发指南、技术规范说明",
+    "description": "API 接口文档、开发指南、技术规范说明！",
     "createTime": "2023-02-20",
-    "status": "active"
+    "status": "inactive"
   },
   {
     "id": 3,
@@ -18,21 +18,21 @@
     "name": "运营活动",
     "description": "营销活动规则、推广策略、活动复盘",
     "createTime": "2023-04-05",
-    "status": "active"
+    "status": "inactive"
   },
   {
     "id": 5,
     "name": "数据分析",
     "description": "用户行为分析、业务数据报表、趋势预测",
     "createTime": "2023-05-22",
-    "status": "active"
+    "status": "inactive"
   },
   {
     "id": 6,
     "name": "帮助中心",
     "description": "新手指南、常见问题解答、操作教程",
     "createTime": "2023-06-18",
-    "status": "active"
+    "status": "inactive"
   },
   {
     "id": 7,
@@ -206,18 +206,6 @@
     "id": 32,
     "name": "招聘通告",
     "description": "公司新招聘前端开发实习生",
-    "status": "active"
-  },
-  {
-    "id": 33,
-    "name": "重要通告",
-    "description": "公司下周六将举行团建",
-    "status": "active"
-  },
-  {
-    "id": 34,
-    "name": "1",
-    "description": "1",
     "status": "active"
   }
 ]
